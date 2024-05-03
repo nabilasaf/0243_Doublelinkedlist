@@ -50,8 +50,12 @@ void addNode() {
 
         if (current != NULL)
         {
-            current->prev = newNode; //step 6: Make the previous field of the current node point to the new node
+            current->prev = newNode; //step 6: Make the previousfield of the current node point to the new node
         }
+         if (previous != NULL)
+         {
+            previous->next = newNode; //steo 7: Make the next field of the previous node point to the new node
+         }
     }
 };
 
